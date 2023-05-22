@@ -1,3 +1,0 @@
-cargo:rerun-if-changed=build/main.rs
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/typenum-19d42fc9a441b8b0/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/typenum-19d42fc9a441b8b0/out/op.rs
