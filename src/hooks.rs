@@ -18,26 +18,15 @@ pub(super) unsafe fn init() -> Result<(), Box<dyn Error>> {
         windows::Win32::System::LibraryLoader::GetModuleHandleA(windows::core::PCSTR(0 as _))?.0
             as usize;
 
-    init_gd_hook!(
-        base,
-        d_collectItem,
-        0x111890,
-        h_collectItem
-    );
+    init_gd_hook!(base, d_collectItem, 0x111890, h_collectItem);
 
-    init_gd_hook!(
-        base,
-        d_collectedObject,
-        0x111830,
-        h_collectedObject
-    );
+    init_gd_hook!(base, d_collectedObject, 0x111830, h_collectedObject);
 
     Ok(())
 }
 
 fn h_collectItem(this: *const (), item: i32, count: i32) {
     unsafe {
-        
         d_collectItem.call(this, item.clamp(0, 1099), count);
     }
 }

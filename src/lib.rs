@@ -1,7 +1,5 @@
 #![feature(abi_thiscall)]
 
-use windows::Win32::System::Diagnostics::Debug::IMAGE_NT_HEADERS32;
-use windows::Win32::System::SystemServices::IMAGE_DOS_HEADER;
 mod hooks;
 
 #[allow(non_snake_case)]

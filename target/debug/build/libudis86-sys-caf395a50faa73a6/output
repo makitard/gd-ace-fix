@@ -1,0 +1,82 @@
+TARGET = Some("x86_64-unknown-linux-gnu")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-unknown-linux-gnu")
+cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+CC_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+CC_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+CFLAGS_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+CFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-includestring.h" "-o" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/decode.o" "-c" "libudis86/decode.c"
+cargo:warning=libudis86/decode.c: In function ‘decode_operand’:
+cargo:warning=libudis86/decode.c:746:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+cargo:warning=  746 |       u->br_far  = 1;
+cargo:warning=      |       ~~~~~~~~~~~^~~
+cargo:warning=libudis86/decode.c:748:5: note: here
+cargo:warning=  748 |     case OP_M:
+cargo:warning=      |     ^~~~
+cargo:warning=libudis86/decode.c:749:10: warning: this statement may fall through [-Wimplicit-fallthrough=]
+cargo:warning=  749 |       if (MODRM_MOD(modrm(u)) == 3) {
+cargo:warning=      |          ^
+cargo:warning=libudis86/decode.c:753:5: note: here
+cargo:warning=  753 |     case OP_E:
+cargo:warning=      |     ^~~~
+cargo:warning=libudis86/decode.c:768:10: warning: this statement may fall through [-Wimplicit-fallthrough=]
+cargo:warning=  768 |       if (MODRM_MOD(modrm(u)) != 3) {
+cargo:warning=      |          ^
+cargo:warning=libudis86/decode.c:772:5: note: here
+cargo:warning=  772 |     case OP_Q:
+cargo:warning=      |     ^~~~
+cargo:warning=libudis86/decode.c:779:10: warning: this statement may fall through [-Wimplicit-fallthrough=]
+cargo:warning=  779 |       if (MODRM_MOD(modrm(u)) != 3) {
+cargo:warning=      |          ^
+cargo:warning=libudis86/decode.c:783:5: note: here
+cargo:warning=  783 |     case OP_W:
+cargo:warning=      |     ^~~~
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-includestring.h" "-o" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/itab.o" "-c" "libudis86/itab.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-includestring.h" "-o" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/syn-att.o" "-c" "libudis86/syn-att.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-includestring.h" "-o" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/syn-intel.o" "-c" "libudis86/syn-intel.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-includestring.h" "-o" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/syn.o" "-c" "libudis86/syn.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-includestring.h" "-o" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/udis86.o" "-c" "libudis86/udis86.c"
+exit status: 0
+cargo:rerun-if-env-changed=AR_x86_64-unknown-linux-gnu
+AR_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=AR_x86_64_unknown_linux_gnu
+AR_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-unknown-linux-gnu
+ARFLAGS_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_unknown_linux_gnu
+ARFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: ZERO_AR_DATE="1" "ar" "cq" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86.a" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/decode.o" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/itab.o" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/syn-att.o" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/syn-intel.o" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/syn.o" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86/udis86.o"
+exit status: 0
+running: "ar" "s" "/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out/libudis86.a"
+exit status: 0
+cargo:rustc-link-lib=static=udis86
+cargo:rustc-link-search=native=/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/debug/build/libudis86-sys-caf395a50faa73a6/out

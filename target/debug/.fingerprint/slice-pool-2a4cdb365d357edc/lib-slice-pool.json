@@ -1,0 +1,1 @@
+{"rustc":5808688696099006496,"features":"[]","target":14383162345482410759,"profile":3735503092003429423,"path":17162987815874071549,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/slice-pool-2a4cdb365d357edc/dep-lib-slice-pool"}}],"rustflags":["-C","link-arg=-fuse-ld=/usr/bin/mold"],"metadata":2907206259780704252,"config":16520146531172537597,"compile_kind":0}

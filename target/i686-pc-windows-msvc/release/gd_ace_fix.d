@@ -1,0 +1,1 @@
+/media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/target/i686-pc-windows-msvc/release/gd_ace_fix.dll: /media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/src/hooks.rs /media/administrator/HDD/dev/coding/.github/repos/gd-ace-fix/src/lib.rs
